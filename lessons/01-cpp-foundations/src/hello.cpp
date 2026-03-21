@@ -1,8 +1,10 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 int main() {
-    std::string name = "Eric";
-    std::cout << "Hello, " << name << "! Welcome to C++ + SE." << std::endl;
+    string name = "Eric";
+    cout << "Hello, " << name << "! Welcome to C++ + SE." << endl;
     return 0;
 }

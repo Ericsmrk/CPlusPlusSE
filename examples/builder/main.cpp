@@ -1,31 +1,33 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 struct Report {
-    std::string title;
-    std::string summary;
-    std::string recommendations;
+    string title;
+    string summary;
+    string recommendations;
 
     void print() const {
-        std::cout << "Title: " << title << "\n"
-                  << "Summary: " << summary << "\n"
-                  << "Recommendations: " << recommendations << "\n";
+        cout << "Title: " << title << "\n"
+             << "Summary: " << summary << "\n"
+             << "Recommendations: " << recommendations << "\n";
     }
 };
 
 class ReportBuilder {
 public:
-    ReportBuilder& setTitle(const std::string& value) {
+    ReportBuilder& setTitle(const string& value) {
         report_.title = value;
         return *this;
     }
 
-    ReportBuilder& setSummary(const std::string& value) {
+    ReportBuilder& setSummary(const string& value) {
         report_.summary = value;
         return *this;
     }
 
-    ReportBuilder& setRecommendations(const std::string& value) {
+    ReportBuilder& setRecommendations(const string& value) {
         report_.recommendations = value;
         return *this;
     }
