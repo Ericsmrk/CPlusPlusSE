@@ -1,48 +1,418 @@
-# Project Structure
+# CPlusPlusSE Source of Truth
 
-This document defines the long-term structure of `CPlusPlusSE` without changing the main `README.md` yet.
+This document is the source of truth for the direction, structure, and teaching philosophy of the `CPlusPlusSE` repository.
 
-The goal is to make this repository a **C++ + Software Engineering learning system** that teaches:
-
-- modern C++
-- software engineering design principles
-- UML-based design thinking
-- design patterns in C++
-- formal reasoning about correctness
-- recurring Maze Game examples from software engineering class
+It exists to keep the project aligned as the repository grows.
 
 ---
 
-# Purpose
+# Core Mission
 
-This repository is designed to teach both:
+`CPlusPlusSE` is a structured learning repository for **mastering C++ from scratch** while **gradually integrating software engineering principles, UML, design patterns, and formal reasoning**.
 
-1. **How to write C++ well**
-2. **How to design software well**
+The most important rule is:
 
-Instead of learning syntax alone, the repository is organized so that every major C++ topic connects to software engineering ideas such as:
+> **This repository teaches C++ first.**  
+> Software engineering topics are layered on top of the C++ learning path, not used as a replacement for it.
 
+This means the repository is **not** just a software engineering notes repo with C++ examples.  
+It is a **C++ learning system** that uses software engineering topics to deepen understanding and improve design thinking.
+
+---
+
+# Primary Priority Order
+
+The repository should always prioritize learning in this order:
+
+1. **Learn C++ fundamentals from scratch**
+2. **Practice writing modern C++ through small programs**
+3. **Use software engineering principles to improve those programs**
+4. **Implement design patterns only after the C++ base is strong enough**
+5. **Add theory and formal reasoning after practical coding foundations are in place**
+
+If there is ever a conflict between “teaching a software engineering topic” and “keeping the C++ learning progression clear,” the C++ learning progression wins.
+
+---
+
+# Teaching Philosophy
+
+Every lesson in this repository should answer two questions:
+
+## 1. What C++ am I learning here?
+This is the main focus.
+
+## 2. What software engineering idea does this support?
+This is the secondary focus.
+
+That keeps the repo centered on learning C++ while still integrating software engineering naturally.
+
+---
+
+# Repository Identity
+
+This repository is meant to become:
+
+- a **beginner-to-advanced C++ path**
+- a **software engineering companion track**
+- a **design-pattern implementation repo**
+- a **UML-backed learning system**
+- a **case-study-driven practice repo**
+- a **long-term reference for mastering C++ and design**
+
+---
+
+# Main Focus: Learning C++ From Scratch
+
+The central purpose of this repo is to make sure the learner becomes strong in:
+
+- syntax
+- types
+- references
+- `const`
+- functions
+- control flow
+- classes
+- object lifecycle
+- memory
+- RAII
+- polymorphism
+- STL
+- multi-file structure
+- debugging
+- writing clean, modular C++ code
+
+Software engineering content should reinforce and improve this learning, not distract from it.
+
+---
+
+# How Software Engineering Fits In
+
+Software engineering topics should be integrated only when they naturally support the C++ concepts being learned.
+
+Examples:
+
+## References and const
+### C++ focus
+- pass by value
+- pass by reference
+- `const` correctness
+
+### SE connection
+- clearer interfaces
+- API transparency
+- less accidental complexity
+
+---
+
+## Classes and encapsulation
+### C++ focus
+- class syntax
+- constructors
+- methods
+- private/public members
+
+### SE connection
+- encapsulation
+- modularity
+- cohesion
+
+---
+
+## Inheritance and polymorphism
+### C++ focus
+- inheritance
+- virtual functions
+- abstract base classes
+- `override`
+
+### SE connection
+- Liskov Substitution Principle
+- Open/Closed Principle
+- polymorphic design
+
+---
+
+## Multi-file project structure
+### C++ focus
+- headers
+- implementation files
+- build systems
+- code organization
+
+### SE connection
 - modularity
 - cohesion
 - coupling
-- inheritance
-- polymorphism
-- SOLID principles
-- Law of Demeter
-- MVC
-- design patterns
-- essential vs accidental complexity
-- proof of correctness
-- Petri Nets
+- maintainability
 
 ---
 
-# High-Level Repository Layout
+# Rule for Lesson Design
+
+Every lesson should begin with these two sections:
+
+## Primary C++ Goal
+A short statement of the exact C++ concept being learned.
+
+## Software Engineering Connection
+A short statement of the SE concept that the lesson reinforces.
+
+This format is required because it preserves the correct priority.
+
+---
+
+# Learning Progression
+
+The repository should be built in stages.
+
+---
+
+# Stage A — Core C++ Foundations
+
+This is the highest priority stage.  
+The learner should become comfortable writing C++ before heavy design material is introduced.
+
+## Lessons in this stage
+1. C++ foundations
+2. variables, types, const, references
+3. functions and decomposition
+4. control flow and loops
+5. classes and encapsulation
+6. strings, vectors, and collections
+7. pointers and dynamic memory basics
+8. RAII and smart pointers
+9. inheritance and polymorphism
+10. STL and algorithms
+11. exceptions, assertions, and debugging
+12. file I/O and multi-file program structure
+
+## Goal of this stage
+The learner should be able to write and understand real C++ programs confidently.
+
+---
+
+# Stage B — C++ Design Fundamentals
+
+This stage introduces software engineering ideas after the learner has enough C++ to understand them properly.
+
+## Lessons in this stage
+13. cohesion, coupling, and modularity
+14. Law of Demeter
+15. SOLID overview
+16. Open/Closed Principle
+17. Liskov Substitution Principle
+18. Dependency Inversion Principle
+19. Single Responsibility Principle and Interface Segregation Principle
+20. essential vs accidental complexity
+21. extension and contraction
+
+## Goal of this stage
+The learner should understand what makes a C++ design clean, maintainable, and extensible.
+
+---
+
+# Stage C — Architecture and Design Patterns
+
+Patterns come after the learner already understands classes, inheritance, polymorphism, and modular design.
+
+## Lessons in this stage
+22. MVC
+23. Singleton
+24. Abstract Factory
+25. Adapter
+26. Decorator
+27. Façade
+28. Composite
+29. Proxy
+30. Observer
+31. Visitor
+32. Chain of Responsibility
+33. Command
+
+## Goal of this stage
+The learner should be able to implement and explain major design patterns in C++.
+
+---
+
+# Stage D — Theory and Formal Reasoning
+
+Formal topics should come after the learner has enough programming maturity to benefit from them.
+
+## Lessons in this stage
+34. models of computation
+35. Petri Nets
+36. proof of correctness
+
+## Goal of this stage
+The learner should be able to connect practical software construction to formal reasoning and system models.
+
+---
+
+# Stage E — Capstones
+
+Capstones integrate everything learned so far.
+
+## Capstones
+37. Maze Game architecture
+38. messy system refactor
+
+## Goal of this stage
+The learner should be able to apply C++, software engineering principles, design patterns, UML, and reasoning in larger systems.
+
+---
+
+# Required Early C++ Coverage
+
+Because the repository is teaching C++ from scratch, the following topics must not be skipped or rushed:
+
+- variables and types
+- `const`
+- references
+- functions
+- control flow
+- loops
+- classes
+- constructors/destructors
+- strings and vectors
+- pointers
+- memory basics
+- smart pointers
+- inheritance
+- polymorphism
+- STL basics
+- file organization
+- debugging
+
+These form the real foundation of the repository.
+
+---
+
+# Software Engineering Topics to Integrate
+
+These topics should appear progressively as the C++ base grows:
+
+- modularity
+- MVC
+- cohesion
+- coupling
+- Law of Demeter
+- inheritance
+- polymorphism
+- SOLID principles
+- essential vs accidental complexity
+- extension/contraction
+- UML diagrams
+- Maze Game examples
+- design tradeoff discussions
+
+---
+
+# Design Patterns to Implement
+
+These patterns should be implemented only after the learner has the required C++ background.
+
+## Creational
+- Abstract Factory
+- Singleton
+
+## Structural
+- Adapter
+- Decorator
+- Façade
+- Composite
+- Proxy
+
+## Behavioral
+- Observer
+- Visitor
+- Chain of Responsibility
+- Command
+
+---
+
+# Case Study Requirement: Maze Game
+
+The Maze Game should act as the recurring case study for the repository.
+
+It should not dominate the beginner lessons too early, but it should become a major thread later.
+
+## Maze Game should be used for:
+- inheritance and polymorphism examples
+- MVC architecture
+- Abstract Factory
+- Observer
+- Visitor
+- Command
+- Composite
+- possibly Façade
+
+## Why this matters
+Using the same recurring case study helps connect separate lessons into one coherent design story.
+
+---
+
+# UML Requirement
+
+UML should support the design-heavy parts of the repository.
+
+It should be introduced as a communication tool, not as a replacement for code.
+
+## UML should be included especially for:
+- class relationships
+- architecture diagrams
+- pattern structure diagrams
+- sequence diagrams for behavior-heavy lessons
+- state/process diagrams where appropriate
+
+## Typical UML types to use
+- class diagrams
+- sequence diagrams
+- package diagrams
+- state diagrams
+
+---
+
+# Definition of a Good Lesson
+
+A lesson is considered good if it does all of the following:
+
+1. teaches a clear C++ concept
+2. includes working C++ code
+3. explains why the code matters
+4. connects the code to a software engineering idea when appropriate
+5. includes exercises
+6. includes common mistakes
+7. builds naturally on previous lessons
+
+A lesson should never feel like random theory detached from actual C++ programming.
+
+---
+
+# Standard Lesson Template
+
+Each lesson should follow a consistent structure.
+
+## Required sections
+- lesson overview
+- primary C++ goal
+- software engineering connection
+- key concepts
+- annotated examples
+- build/run instructions
+- common mistakes
+- exercises
+- stretch exercises
+- connection to previous lessons
+
+---
+
+# Recommended Repository Structure
 
 ```text
 CPlusPlusSE/
 ├── README.md
 ├── projectstructure.md
+├── sourceoftruth.md
 ├── CMakeLists.txt
 ├── CMakePresets.json
 ├── .gitignore
@@ -67,881 +437,40 @@ CPlusPlusSE/
 │   ├── 01-cpp-foundations/
 │   ├── 02-types-references-const/
 │   ├── 03-functions-decomposition/
-│   ├── 04-classes-encapsulation/
-│   ├── 05-raii-ownership/
-│   ├── 06-inheritance-polymorphism/
-│   ├── 07-cohesion-coupling-modularity/
-│   ├── 08-law-of-demeter/
-│   ├── 09-open-closed-principle/
-│   ├── 10-liskov-substitution-principle/
-│   ├── 11-dependency-inversion-principle/
-│   ├── 12-single-responsibility-interface-segregation/
-│   ├── 13-extension-contraction/
-│   ├── 14-essential-vs-accidental-complexity/
-│   ├── 15-mvc/
-│   ├── 16-singleton/
-│   ├── 17-abstract-factory/
-│   ├── 18-adapter/
-│   ├── 19-decorator/
-│   ├── 20-facade/
-│   ├── 21-composite/
-│   ├── 22-proxy/
-│   ├── 23-observer/
-│   ├── 24-visitor/
-│   ├── 25-chain-of-responsibility/
-│   ├── 26-command/
-│   ├── 27-models-of-computation/
-│   ├── 28-petri-nets/
-│   └── 29-proof-of-correctness/
+│   ├── 04-control-flow-loops/
+│   ├── 05-classes-encapsulation/
+│   ├── 06-strings-vectors-collections/
+│   ├── 07-pointers-memory-basics/
+│   ├── 08-raii-smart-pointers/
+│   ├── 09-inheritance-polymorphism/
+│   ├── 10-stl-algorithms/
+│   ├── 11-exceptions-assertions-debugging/
+│   ├── 12-file-io-multi-file-programs/
+│   ├── 13-cohesion-coupling-modularity/
+│   ├── 14-law-of-demeter/
+│   ├── 15-solid-overview/
+│   ├── 16-open-closed-principle/
+│   ├── 17-liskov-substitution-principle/
+│   ├── 18-dependency-inversion-principle/
+│   ├── 19-srp-isp/
+│   ├── 20-essential-vs-accidental-complexity/
+│   ├── 21-extension-contraction/
+│   ├── 22-mvc/
+│   ├── 23-singleton/
+│   ├── 24-abstract-factory/
+│   ├── 25-adapter/
+│   ├── 26-decorator/
+│   ├── 27-facade/
+│   ├── 28-composite/
+│   ├── 29-proxy/
+│   ├── 30-observer/
+│   ├── 31-visitor/
+│   ├── 32-chain-of-responsibility/
+│   ├── 33-command/
+│   ├── 34-models-of-computation/
+│   ├── 35-petri-nets/
+│   └── 36-proof-of-correctness/
 │
 └── capstones/
-    ├── maze-game-architecture/
-    └── mini-system-refactor/
-```
-
----
-
-# Standard Lesson Folder Template
-
-Each lesson should follow the same structure so the repository stays predictable and scalable.
-
-```text
-lesson-name/
-├── README.md
-├── learning-objectives.md
-├── notes.md
-├── include/
-├── src/
-├── tests/
-├── uml/
-│   ├── class-diagram.puml
-│   ├── sequence-diagram.puml
-│   └── rendered/
-├── examples/
-└── exercises/
-```
-
-## Folder roles
-
-### `README.md`
-Contains:
-- lesson overview
-- why the topic matters
-- build/run instructions
-- lesson deliverables
-
-### `learning-objectives.md`
-Contains:
-- what should be understood
-- what should be implemented
-- what design judgment should be explained
-
-### `notes.md`
-Contains:
-- deeper lesson explanation
-- concept comparisons
-- common mistakes
-- exam-style review notes
-
-### `include/`
-Header files for the lesson.
-
-### `src/`
-Implementation files for the lesson.
-
-### `tests/`
-Unit or integration tests.
-
-### `uml/`
-PlantUML source files and rendered diagrams.
-
-### `examples/`
-Small focused demos.
-
-### `exercises/`
-Practice work and challenge prompts.
-
----
-
-# Standard Lesson Format
-
-Every lesson should use the same teaching flow.
-
-1. **Concept overview**
-2. **Why it matters in software engineering**
-3. **C++ implementation walkthrough**
-4. **Design discussion**
-5. **UML diagram(s)**
-6. **Common mistakes**
-7. **Exercises**
-8. **Connection to earlier lessons**
-
----
-
-# Lesson Roadmap
-
-## Lesson 01 — C++ Foundations
-**Folder:** `lessons/01-cpp-foundations/`
-
-### Main focus
-- basic program structure
-- compilation
-- source files vs header files
-- functions
-- simple input/output
-
-### Software engineering connection
-- basic modularity
-- readability
-- naming discipline
-
-### Suggested deliverables
-- hello world
-- one small utility function
-- first CMake target
-
----
-
-## Lesson 02 — Types, References, and Const
-**Folder:** `lessons/02-types-references-const/`
-
-### Main focus
-- primitive types
-- `auto`
-- references
-- `const`
-- pass by value vs pass by reference
-
-### Software engineering connection
-- interface clarity
-- transparency of intent
-- reducing accidental complexity
-
-### Suggested deliverables
-- examples showing mutation vs non-mutation
-- utility functions with different parameter styles
-
----
-
-## Lesson 03 — Functions and Decomposition
-**Folder:** `lessons/03-functions-decomposition/`
-
-### Main focus
-- function declarations and definitions
-- parameter passing
-- return values
-- overloading
-- decomposition
-- helper functions
-
-### Software engineering connection
-- modularity
-- cohesion
-- coupling
-- readable function boundaries
-
-### Suggested deliverables
-- refactor one long function into smaller cohesive ones
-- compare bad vs good decomposition
-
----
-
-## Lesson 04 — Classes and Encapsulation
-**Folder:** `lessons/04-classes-encapsulation/`
-
-### Main focus
-- class structure
-- public/private
-- constructors
-- methods
-- invariants
-- header/implementation separation
-
-### Software engineering connection
-- information hiding
-- cohesion
-- stable interfaces
-
-### Suggested deliverables
-- `Task`, `BankAccount`, or `Timer` class
-- invariant enforcement through methods
-
----
-
-## Lesson 05 — RAII and Ownership
-**Folder:** `lessons/05-raii-ownership/`
-
-### Main focus
-- RAII
-- constructors/destructors
-- stack vs heap
-- `unique_ptr`
-- `shared_ptr`
-- ownership rules
-
-### Software engineering connection
-- safer design
-- correctness by construction
-- reducing accidental complexity
-
-### Suggested deliverables
-- resource wrapper class
-- file/logger/session guard example
-
----
-
-## Lesson 06 — Inheritance and Polymorphism
-**Folder:** `lessons/06-inheritance-polymorphism/`
-
-### Main focus
-- base classes
-- derived classes
-- virtual functions
-- abstract classes
-- override
-- runtime polymorphism
-
-### Software engineering connection
-- inheritance
-- polymorphism
-- design contracts
-- setup for Liskov Substitution Principle
-
-### Suggested deliverables
-- `Shape` hierarchy or small Maze element hierarchy
-- dynamic dispatch demo
-
----
-
-## Lesson 07 — Cohesion, Coupling, and Modularity
-**Folder:** `lessons/07-cohesion-coupling-modularity/`
-
-### Main focus
-- cohesion
-- coupling
-- modularity
-- designing boundaries
-
-### Software engineering connection
-- maintainability
-- testability
-- design quality
-
-### Suggested deliverables
-- bad “God class” example
-- refactored modular version
-- written analysis of improvement
-
----
-
-## Lesson 08 — Law of Demeter
-**Folder:** `lessons/08-law-of-demeter/`
-
-### Main focus
-- “talk only to your immediate friends”
-- train-wreck calls
-- reducing deep object chaining
-
-### Software engineering connection
-- low coupling
-- encapsulation
-- interface discipline
-
-### Suggested deliverables
-- bad chained access example
-- refactored façade-like interaction
-
----
-
-## Lesson 09 — Open/Closed Principle
-**Folder:** `lessons/09-open-closed-principle/`
-
-### Main focus
-- open for extension
-- closed for modification
-- extension via abstraction and polymorphism
-
-### Software engineering connection
-- extensibility
-- architecture stability
-- plugin-style thinking
-
-### Suggested deliverables
-- pricing, notification, or action system
-- add new behavior without changing stable core code
-
----
-
-## Lesson 10 — Liskov Substitution Principle
-**Folder:** `lessons/10-liskov-substitution-principle/`
-
-### Main focus
-- substitutability
-- behavioral contracts
-- bad inheritance examples
-
-### Software engineering connection
-- safe polymorphism
-- trustworthy abstractions
-- avoiding fragile hierarchies
-
-### Suggested deliverables
-- broken rectangle/square-style example
-- corrected design using better abstraction or composition
-
----
-
-## Lesson 11 — Dependency Inversion Principle
-**Folder:** `lessons/11-dependency-inversion-principle/`
-
-### Main focus
-- depend on abstractions, not concretions
-- interfaces
-- constructor injection
-- test doubles
-
-### Software engineering connection
-- architecture quality
-- testability
-- low coupling
-
-### Suggested deliverables
-- `ReportService` using `ILogger` and `IStorage`
-- swap implementations without changing service logic
-
----
-
-## Lesson 12 — Single Responsibility + Interface Segregation
-**Folder:** `lessons/12-single-responsibility-interface-segregation/`
-
-### Main focus
-- focused responsibilities
-- splitting large interfaces
-- avoiding fat classes
-
-### Software engineering connection
-- cohesion
-- maintainability
-- clearer contracts
-
-### Suggested deliverables
-- split one large class into focused parts
-- split one large interface into smaller interfaces
-
----
-
-## Lesson 13 — Extension and Contraction
-**Folder:** `lessons/13-extension-contraction/`
-
-### Main focus
-- extending software safely
-- contracting bloated designs into focused units
-- refactoring toward cleaner abstractions
-
-### Software engineering connection
-- design evolution
-- accidental complexity control
-- maintainability over time
-
-### Suggested deliverables
-- start with overgrown module
-- contract responsibilities
-- add extension point cleanly
-
----
-
-## Lesson 14 — Essential vs Accidental Complexity
-**Folder:** `lessons/14-essential-vs-accidental-complexity/`
-
-### Main focus
-- Brooks’ idea
-- inherent domain complexity
-- complexity caused by poor design, tooling, or structure
-
-### Software engineering connection
-- engineering judgment
-- simplification
-- recognizing wasted complexity
-
-### Suggested deliverables
-- system analysis
-- label essential vs accidental parts
-- redesign to reduce accidental complexity
-
----
-
-## Lesson 15 — MVC
-**Folder:** `lessons/15-mvc/`
-
-### Main focus
-- Model
-- View
-- Controller
-- separation of concerns
-
-### Software engineering connection
-- architecture
-- interface separation
-- event flow
-
-### Suggested deliverables
-- console-based Maze Game or task system using MVC
-- one action flow from controller to model to view
-
----
-
-## Lesson 16 — Singleton
-**Folder:** `lessons/16-singleton/`
-
-### Main focus
-- singleton structure
-- Meyers singleton
-- global access concerns
-- tradeoffs
-
-### Software engineering connection
-- hidden coupling
-- testing concerns
-- pattern misuse warnings
-
-### Suggested deliverables
-- config manager singleton
-- critique section explaining when not to use it
-
----
-
-## Lesson 17 — Abstract Factory
-**Folder:** `lessons/17-abstract-factory/`
-
-### Main focus
-- families of related objects
-- creation through interfaces
-- decoupling creation from use
-
-### Software engineering connection
-- Open/Closed Principle
-- Dependency Inversion Principle
-- product families
-- Maze Game example
-
-### Suggested deliverables
-- Maze factory
-- enchanted maze factory
-- bombed maze factory
-
----
-
-## Lesson 18 — Adapter
-**Folder:** `lessons/18-adapter/`
-
-### Main focus
-- converting one interface to another
-- wrapping incompatible code
-
-### Software engineering connection
-- legacy integration
-- decoupling
-- reuse
-
-### Suggested deliverables
-- adapt legacy logger, printer, or parser interface
-
----
-
-## Lesson 19 — Decorator
-**Folder:** `lessons/19-decorator/`
-
-### Main focus
-- dynamic behavior wrapping
-- composition over inheritance
-
-### Software engineering connection
-- extensibility
-- avoiding subclass explosion
-- transparent feature layering
-
-### Suggested deliverables
-- stream/text formatter or game item modifier example
-
----
-
-## Lesson 20 — Façade
-**Folder:** `lessons/20-facade/`
-
-### Main focus
-- simplify a complex subsystem
-- provide a clean front door
-
-### Software engineering connection
-- low coupling
-- usability
-- easier client code
-
-### Suggested deliverables
-- subsystem with many classes
-- one façade for simplified client use
-
----
-
-## Lesson 21 — Composite
-**Folder:** `lessons/21-composite/`
-
-### Main focus
-- trees
-- leaves and composites
-- uniform treatment of grouped and individual objects
-
-### Software engineering connection
-- recursive design
-- hierarchical systems
-- flexible object structures
-
-### Suggested deliverables
-- file system, UI tree, or maze structure example
-
----
-
-## Lesson 22 — Proxy
-**Folder:** `lessons/22-proxy/`
-
-### Main focus
-- placeholder object
-- access control
-- lazy loading
-- remote-like access
-
-### Software engineering connection
-- performance
-- security
-- controlled access
-
-### Suggested deliverables
-- image, document, or resource proxy example
-
----
-
-## Lesson 23 — Observer
-**Folder:** `lessons/23-observer/`
-
-### Main focus
-- publish/subscribe
-- notifying dependents of state changes
-- loose coupling in event systems
-
-### Software engineering connection
-- event-driven systems
-- UI updates
-- scalable reactions to change
-
-### Suggested deliverables
-- game state observer
-- score/UI/logger observers
-
----
-
-## Lesson 24 — Visitor
-**Folder:** `lessons/24-visitor/`
-
-### Main focus
-- separate operations from object structure
-- double dispatch
-- adding operations without changing element classes
-
-### Software engineering connection
-- operation extensibility
-- structured traversal
-- tradeoffs in object model rigidity
-
-### Suggested deliverables
-- Maze element visitor or AST visitor
-
----
-
-## Lesson 25 — Chain of Responsibility
-**Folder:** `lessons/25-chain-of-responsibility/`
-
-### Main focus
-- request passes along a chain
-- handler decides to process or delegate
-
-### Software engineering connection
-- flexible request handling
-- decoupling sender from final receiver
-
-### Suggested deliverables
-- validation pipeline
-- support escalation chain
-- input handling chain
-
----
-
-## Lesson 26 — Command
-**Folder:** `lessons/26-command/`
-
-### Main focus
-- encapsulate actions as objects
-- undo/redo
-- queueing and logging commands
-
-### Software engineering connection
-- controller logic
-- decoupling invoker from receiver
-- action history
-
-### Suggested deliverables
-- Maze Game movement command system
-- undoable commands
-
----
-
-## Lesson 27 — Models of Computation
-**Folder:** `lessons/27-models-of-computation/`
-
-### Main focus
-- what a computation model is
-- state transitions
-- abstractions for behavior and execution
-
-### Software engineering connection
-- thinking formally about systems
-- connecting implementation to theory
-
-### Suggested deliverables
-- simple state machine examples
-- system behavior discussion
-
----
-
-## Lesson 28 — Petri Nets
-**Folder:** `lessons/28-petri-nets/`
-
-### Main focus
-- places
-- transitions
-- tokens
-- concurrency modeling
-- deadlock intuition
-
-### Software engineering connection
-- formal models of concurrency
-- workflow reasoning
-
-### Suggested deliverables
-- represent a small process as a Petri Net
-- optionally build a simple simulation
-
----
-
-## Lesson 29 — Proof of Correctness
-**Folder:** `lessons/29-proof-of-correctness/`
-
-### Main focus
-- preconditions
-- postconditions
-- invariants
-- Hoare-style reasoning
-
-### Software engineering connection
-- correctness
-- trustworthy software
-- formal reasoning about implementation
-
-### Suggested deliverables
-- prove correctness of a small algorithm or state update
-- annotate code with conditions and invariants
-
----
-
-# Capstones
-
-## Capstone 1 — Maze Game Architecture
-**Folder:** `capstones/maze-game-architecture/`
-
-### Goal
-Combine multiple lessons into a single coherent system.
-
-### Include
-- MVC
-- Abstract Factory
-- Command
-- Observer
-- Composite or Visitor
-- UML diagrams
-- tests
-
-### Deliverables
-- working Maze Game skeleton
-- architecture writeup
-- design rationale
-- UML package/class diagrams
-
----
-
-## Capstone 2 — Mini System Refactor
-**Folder:** `capstones/mini-system-refactor/`
-
-### Goal
-Start with intentionally messy code and improve it.
-
-### Include
-- cohesion/coupling analysis
-- Law of Demeter fixes
-- OCP/DIP improvements
-- UML before and after
-- written justification
-
----
-
-# Shared Case Study: Maze Game
-
-The Maze Game should act as the recurring example domain throughout the course.
-
-## Use Maze Game for
-- inheritance/polymorphism
-- MVC
-- Abstract Factory
-- Observer
-- Visitor
-- Command
-- Composite
-- possible Façade
-
-## Why
-It gives continuity and reinforces how the same domain can be redesigned using different principles and patterns.
-
----
-
-# UML Expectations
-
-Each architecture-heavy lesson should include UML.
-
-## Minimum expectation
-- class diagram for structural relationships
-- sequence diagram for interaction-heavy lessons
-- state or process diagram where behavior matters
-
-## Recommended tooling
-- PlantUML source in each lesson’s `uml/` folder
-- rendered images in `uml/rendered/`
-
----
-
-# Testing Expectations
-
-Each lesson should include tests when practical.
-
-## Testing goals
-- verify behavior
-- reinforce contracts
-- show why abstractions help testing
-- support modular design lessons
-
-## Recommended approach
-- use a simple test framework or lightweight assertions
-- at minimum, lesson-level executable checks
-
----
-
-# Suggested Docs Folder Content
-
-## `docs/course-roadmap.md`
-High-level map of the repository.
-
-## `docs/glossary.md`
-Definitions for:
-- abstraction
-- encapsulation
-- coupling
-- cohesion
-- polymorphism
-- inheritance
-- modularity
-- invariants
-
-## `docs/uml-guide.md`
-How to read and create the UML used in the repo.
-
-## `docs/solid-principles.md`
-Repository-wide summary of:
-- SRP
-- OCP
-- LSP
-- ISP
-- DIP
-
-## `docs/pattern-comparison-guide.md`
-Comparisons such as:
-- Adapter vs Façade
-- Decorator vs inheritance
-- Composite vs ordinary containment
-- Command vs direct function calls
-- Abstract Factory vs direct construction
-- Observer vs polling
-
-## `docs/maze-game-case-study.md`
-How the Maze Game evolves across lessons.
-
----
-
-# Suggested Progression Strategy
-
-## Stage A — Learn the language
-Lessons 1–6
-
-## Stage B — Learn design principles
-Lessons 7–14
-
-## Stage C — Learn architecture and patterns
-Lessons 15–26
-
-## Stage D — Learn formal reasoning
-Lessons 27–29
-
-## Stage E — Integrate everything
-Capstones
-
----
-
-# Definition of Done for a Lesson
-
-A lesson is complete when it has:
-
-- `README.md`
-- code in `src/` and `include/`
-- at least one working example
-- at least one exercise
-- at least one diagram when appropriate
-- build target added to CMake
-- tests or validation checks
-- notes on common mistakes
-
----
-
-# Minimal CMake Growth Plan
-
-At the root, add one target per lesson over time.
-
-Example target naming:
-- `lesson02_types`
-- `lesson03_decomposition`
-- `lesson04_encapsulation`
-- `lesson17_abstract_factory`
-- `capstone_maze_game`
-- `capstone_refactor`
-
----
-
-# Summary
-
-This structure turns the repository into a **C++ + Software Engineering mastery track**.
-
-It should support:
-- progressive C++ skill building
-- integrated software engineering principles
-- design pattern implementations
-- recurring Maze Game examples
-- UML-supported design explanations
-- later formal reasoning work
-- capstones that bring everything together
-
-This file is intentionally separate from the main `README.md` so the repo can evolve before the public-facing overview is updated.
+    ├── 37-maze-game-architecture/
+    └── 38-mini-system-refactor/

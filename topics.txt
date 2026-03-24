@@ -1,0 +1,45 @@
+Liskov substitution
+Open/closed principle
+Dependency Inv.
+Extension/Contraction
+Software
+Modularity
+MVC
+
+Creational Patterns:
+Abstract Factory
+Singleton
+Structural Patterns:
+Adapter
+
+Structural Patterns:
+Decorator
+Façade
+Composite
+Proxy
+
+Behavioral Patterns:
+Observer
+Visitor
+
+Behavioral Patterns:
+Chain of Responsibility
+Command
+
+Models of Computation
+[Peterson]: Petri Nets
+
+Peterson]: Petri Nets
+[Hoare] Proof of Correctness
+
+accidental/essential (no silver bullet)
+cohesian 
+coupling
+kwik
+transparancy
+Law of demeter
+inheritance
+polymorphism
+SOLIS PRINCIPLES
+MAZE GAME EXAMPLES
+UML DIAGRAMS OF THE DESIGNS WE IMPLEMENT..
