@@ -8,7 +8,11 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 enable_testing()
 
 add_executable(lesson01_hello lessons/01-cpp-foundations/src/hello.cpp)
+add_executable(lesson01_greeting lessons/01-cpp-foundations/src/greeting.cpp)
+add_executable(lesson01_add_numbers lessons/01-cpp-foundations/src/add_numbers.cpp)
+
 add_test(NAME lesson01_hello_runs COMMAND lesson01_hello)
+add_test(NAME lesson01_add_numbers_runs COMMAND lesson01_add_numbers)
 
 add_executable(example_abstract_factory examples/abstract_factory/main.cpp)
 add_test(NAME example_abstract_factory_runs COMMAND example_abstract_factory)

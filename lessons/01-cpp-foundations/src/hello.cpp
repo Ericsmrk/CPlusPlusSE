@@ -1,10 +1,9 @@
+// Lesson 1 — Example: minimal program structure and output
 #include <iostream>
-#include <string>
-
 using namespace std;
 
 int main() {
-    string name = "Eric";
-    cout << "Hello, " << name << "! Welcome to C++ + SE." << endl;
+    cout << "Hello, world!\n";
+    cout << "Welcome to the CPlusPlusSE learning path.\n";
     return 0;
 }
